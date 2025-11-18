@@ -179,7 +179,18 @@ def load_vector_store():
     return _collection
 
 
-def retrieve_relevant_chunks(query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+FACULTY_KEYWORDS = [
+    "faculty",
+    "professor",
+    "professors",
+    "instructor",
+    "lecturer",
+    "teacher",
+    "supervisor",
+]
+
+
+def retrieve_relevant_chunks(query: str, top_k: int = 10) -> List[Dict[str, Any]]:
     """
     Embed the user query, search the vector store, and return the top-k chunks.
     """
@@ -202,6 +213,9 @@ def retrieve_relevant_chunks(query: str, top_k: int = 5) -> List[Dict[str, Any]]
         None
     ] * len(ids)
 
+    q_lower = query.lower()
+    is_faculty_query = any(word in q_lower for word in FACULTY_KEYWORDS)
+
     matched_docs: List[Dict[str, Any]] = []
     for idx, doc_id in enumerate(ids):
         matched_docs.append(
@@ -211,6 +225,24 @@ def retrieve_relevant_chunks(query: str, top_k: int = 5) -> List[Dict[str, Any]]
                 "metadata": metadatas[idx] or {},
                 "distance": distances[idx],
             }
+        )
+
+    if is_faculty_query and matched_docs:
+        def faculty_bonus(meta: Dict[str, Any]) -> int:
+            title = (meta.get("title", "") or "").lower()
+            source_file = (meta.get("source_file", "") or "").lower()
+
+            if "faculty" in title:
+                return 2
+            if "ub_cse_faculty_directory" in source_file or "faculty-directory" in source_file:
+                return 2
+            if "computer-science-engineering" in source_file and "people" in source_file:
+                return 1
+            return 0
+
+        matched_docs.sort(
+            key=lambda doc: faculty_bonus(doc.get("metadata", {}) or {}),
+            reverse=True,
         )
 
     return matched_docs
@@ -297,7 +329,7 @@ def build_prompt_from_context(
 def generate_answer(
     user_query: str,
     conversation_history: Optional[List[Dict[str, str]]] = None,
-    top_k: int = 5,
+    top_k: int = 10,
 ) -> Tuple[str, List[Dict[str, Optional[str]]]]:
     """
     Full RAG pipeline: retrieve, build prompt, call the configured LLM, return answer + sources.

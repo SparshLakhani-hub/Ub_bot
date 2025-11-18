@@ -1,20 +1,85 @@
-# UB RAG Chatbot
+﻿# UB RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) chatbot for the University at Buffalo (UB), built with FastAPI, OpenAI/Ollama, and a local Chroma vector database. The bot answers questions for prospective and newly admitted students using UB website content and exposes a simple embeddable web widget.
+> A RAG-powered chatbot for the University at Buffalo that answers prospective student questions using UBâ€™s own web content.
 
 Repository: https://github.com/SparshLakhani-hub/Ub_bot
 
-## Overview and Features
+**Tech stack**
+- Python, FastAPI
+- ChromaDB (vector store)
+- Ollama (Llama 3.1 + `nomic-embed-text`) or OpenAI
+- HTML / Tailwind floating chat widget
 
-- RAG-based QA over curated UB pages (admissions, housing, MS CS program, etc.).
-- Optional scraper that pulls the **CSE faculty directory** and saves cleaned text into `data/ub_pages/ub_cse_faculty_directory.txt` so the bot can answer questions about professors.
-- Local vector store using **ChromaDB** for fast semantic search.
-- Pluggable LLM backend:
-  - **Ollama** for fully local, no-cost inference.
-  - **OpenAI** for hosted models if you have an API key.
-- REST API built with **FastAPI** exposing `/chat`, `/health`, and `/sources` endpoints.
-- Standalone HTML **chat widget** (`frontend/ub_chat_widget.html`) that can be embedded into other sites.
-- Conversation history per session ID so the bot can handle follow-up questions.
+---
+
+## Overview
+
+UB RAG Chatbot is a retrieval-augmented generation (RAG) assistant focused on the University at Buffalo. It indexes key UB pages (MS CS program, undergraduate admissions, housing and dining, etc.) and uses that content to answer questions from prospective and current students.
+
+Content comes from:
+- `scripts/scrape_ub_site.py`, which can crawl UBâ€™s public site (including the **Computer Science & Engineering faculty directory**) and write cleaned text into `data/ub_pages/ub_cse_faculty_directory.txt` and other files.
+- `scripts/ingest_ub_content.py`, which embeds all `.txt`/`.md` files in `data/ub_pages/` into a local **ChromaDB** vector store.
+
+The backend is a **FastAPI** app with:
+- `GET /health` â€“ basic health check
+- `POST /chat` â€“ main RAG chat endpoint (returns `answer` + `sources`)
+- `GET /sources` â€“ sample of stored documents for debugging
+
+The frontend is a floating, Tailwind-based chat widget in `frontend/ub_chat_widget.html` that talks to the FastAPI backend at `http://localhost:8000` by default.
+
+---
+
+## Features
+
+- Retrieval-augmented generation (RAG) over UB program, admissions, and housing pages.
+- CSE faculty directory scraper for richer answers about Computer Science & Engineering faculty and professors.
+- Configurable LLM provider: OpenAI or fully local Ollama.
+- Persistent **ChromaDB** vector store on disk.
+- Modern floating chat widget that can be embedded into any site.
+- Conversation history keyed by `session_id`, so the bot can handle follow-up questions.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- [Ollama](https://ollama.com/) installed and running locally
+
+### Quickstart (local dev)
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/SparshLakhani-hub/Ub_bot.git
+cd Ub_bot
+
+# 2. Create and activate a virtual environment (optional but recommended)
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Start Ollama (separate terminal)
+ollama serve
+ollama pull llama3.1
+ollama pull nomic-embed-text
+
+# 5. Ingest UB content into Chroma
+python scripts/scrape_ub_site.py      # optional extra scrape
+python scripts/ingest_ub_content.py
+
+# 6. Run the FastAPI backend
+uvicorn app.main:app --reload --port 8000
+
+# 7. Open the chat widget in your browser
+# (Adjust the path if needed)
+# file:///C:/.../Ub_bot/frontend/ub_chat_widget.html
+```
+
+The chat widget’s script uses `API_BASE_URL = "http://localhost:8000"` by default, so it will talk to your local FastAPI server without extra configuration.
 
 ---
 
@@ -22,23 +87,23 @@ Repository: https://github.com/SparshLakhani-hub/Ub_bot
 
 ```text
 .
-├─ app/
-│  ├─ __init__.py
-│  ├─ config.py          # Env vars, paths, model names
-│  ├─ rag_pipeline.py    # Vector lookup + LLM calls
-│  └─ main.py            # FastAPI app and endpoints
-├─ scripts/
-│  ├─ ingest_ub_content.py  # Ingest local UB text into Chroma
-│  └─ scrape_ub_site.py     # Optional UB web scraper
-├─ data/
-│  └─ ub_pages/          # Raw UB text/Markdown files (you create/fill)
-├─ vector_store/
-│  └─ ub/                # Chroma persistent vector DB (created by ingest)
-├─ frontend/
-│  └─ ub_chat_widget.html   # Embeddable chat widget
-├─ .env.example
-├─ requirements.txt
-└─ README.md
+â”œâ”€ app/
+â”‚  â”œâ”€ __init__.py
+â”‚  â”œâ”€ config.py          # Env vars, paths, model names
+â”‚  â”œâ”€ rag_pipeline.py    # Vector lookup + LLM calls
+â”‚  â””â”€ main.py            # FastAPI app and endpoints
+â”œâ”€ scripts/
+â”‚  â”œâ”€ ingest_ub_content.py  # Ingest local UB text into Chroma
+â”‚  â””â”€ scrape_ub_site.py     # Optional UB web scraper
+â”œâ”€ data/
+â”‚  â””â”€ ub_pages/          # Raw UB text/Markdown files (you create/fill)
+â”œâ”€ vector_store/
+â”‚  â””â”€ ub/                # Chroma persistent vector DB (created by ingest)
+â”œâ”€ frontend/
+â”‚  â””â”€ ub_chat_widget.html   # Embeddable chat widget
+â”œâ”€ .env.example
+â”œâ”€ requirements.txt
+â””â”€ README.md
 ```
 
 ---
@@ -267,12 +332,12 @@ The API will be available at `http://localhost:8000`.
    const API_BASE_URL = "http://localhost:8000";
    ```
 
-4. You should see a floating “Ask UB Bot” chat box at the bottom-right. Type a UB-related question and click **Send** (or press **Enter**).
+4. You should see a floating â€œAsk UB Botâ€ chat box at the bottom-right. Type a UB-related question and click **Send** (or press **Enter**).
 
 The widget:
 
 - Maintains a `session_id` to keep short conversation history
-- Shows “UB Bot is thinking…” while waiting for a response
+- Shows â€œUB Bot is thinkingâ€¦â€ while waiting for a response
 - Displays the answer from the backend
 
 ---
@@ -295,3 +360,4 @@ To embed the widget in an existing UB page:
   - Use only retrieved context and avoid inventing facts
   - Admit uncertainty and point users to the official UB website when needed
 - Conversation history is held in memory per-process and is not persisted; restarting the server clears histories.
+
