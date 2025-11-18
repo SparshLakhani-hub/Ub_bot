@@ -1,0 +1,161 @@
+# https://engineering.buffalo.edu/computer-science-engineering/research.html
+
+Research - Department of Computer Science and Engineering - University at Buffalo
+Research
+CSE Research Topics.
+Word cloud describing selected CSE research topics.  The relative word sizes represent the number of faculty working on each topic.  Photo credit: Christian Miller
+Our faculty and students actively work on projects covering a broad range of exciting, cutting-edge topics including AI, big data, bioinformatics, cloud services, computing research, crypto-currency, cyber security, machine learning, Internet of Things, self-driving cars, smartphones, and 5G wireless.
+Research Areas
+8/11/25
+CSE research faculty and their students work in four research categories encompassing 18 research areas.
+Research Centers, Institutes, Labs and Groups
+4/22/24
+CSE leads school and university centers, institutes, and research groups on special topics; and its own departmental research labs and groups.
+Research Highlights
+1/19/23
+CSE research faculty participate in an extraordinarily diverse range of research fields and activities that benefit society.
+Research Policies
+6/4/25
+These policies help guide the CSE research program administration.
+Research Tools
+11/4/22
+The department and university provide numerous tools and resources to assist and support your research.
+Technical Reports
+11/14/24
+Departmental technical reports may include faculty research work, doctoral dissertations, master's theses, and other student research recommended by faculty for publication.
+Research Ranking
+previous
+next
+Excelsior!
+4/2/19
+UB's institutional reputation in the field of computer science has improved dramatically over the last decade.  By the most valid measure, our national ranking has risen from
+50th
+to
+29th
+.
+Computing Research Association (CRA)
+4/2/19
+The
+Computing Research Association (CRA)
+is a leading computer science advocacy organization whose mission is to unite industry, academia, and government.  The CRA recommends
+CSRankings: Computer Science Rankings
+as the best institutional ranking agency, preferring it over the traditional standard, the
+US News and World Report Best Graduate Schools
+report.
+Why?
+4/2/19
+The CRA supports the CSRankings report because its evaluative criteria meet the '
+GOTO
+' standard:
+Good data
+.  Data have been cleaned and curated.
+Open
+.  Data available, regarding attributes measured, at least for verification.
+Transparent
+.  Process and methodologies are entirely transparent.
+Objective
+.  Based on measurable attributes.
+For more details, see
+Department Rankings
+, by H.V. Jagadish
+.
+50th in the Nation
+4/2/19
+According to
+CSRankings (2008-2018)
+, UB's 10-year computer science institutional ranking is
+#50
+in the nation, tied with the
+University of Central Florida
+and the
+University of North Carolina
+.
+34th in the Nation
+4/2/19
+According to
+CSRankings (2015-2018)
+, UB's three-year computer science institutional ranking is
+#34
+in the nation, making our peer institution the
+University of Virginia
+.
+29th in the Nation
+4/2/19
+According to
+CSRankings (2017-2018)
+, UB's one-year computer science institutional ranking is
+#29
+in the nation, putting us in company with
+Harvard
+,
+Johns Hopkins
+,
+Ohio State
+, and
+Penn State
+.
+Research Highlights
+previous
+next
+Smartphone hacks 3D printer by measuring ‘leaked’ energy and acoustic waves
+6/21/21
+Wenyao Xu
+leads an NSF-funded program that detects 3D printing data security vulnerabilities by using smart phones to analyze electromagnetic and acoustic waves.
+Kui Ren
+and
+Chi Zhou
+are co-authors.
+Safer Highways
+6/22/21
+Professor and Chair
+Chunming Qiao
+leads
+Instrument for Connected and Autonomous Vehicle Evaluation and Experimentation (iCAVE2)
+—a
+multidisciplinary academic-industrial partnership that's helping to make self-driving cars safer, cleaner, and more efficient.
+This Necklace Hears What You Eat
+6/21/21
+Wenyao Xu
+created AutoDietary
+—
+software that tracks the unique sounds produced by food as people chew it.  AutoDietary, placed near the throat by a necklace delivery system developed at China's Northeastern University, helps users measure their caloric intake.
+The End of Sneakernet?
+6/22/21
+An article on
+PhysOrg
+reports UB has received a $584,469 grant from the National Science Foundation to create a tool designed to work with the existing computing infrastructure to boost data transfer speeds by more than 10 times, and quotes
+Tevfik Kosar
+, associate professor of computer science.
+Computer Vision for Robot Bees
+6/22/21
+Karthik Dantu
+owns the vision component of the
+RoboBee Initiative
+, led by the National Science Foundation and Harvard University.  The "eyes" that Dr. Dantu is integrating are laser-powered sensors that enable the mechanical bees to orient themselves in space.
+Detecting Chess Cheats
+6/22/21
+Ken Regan
+develops algorithms that detect cheating in chess games.  His software compares a player's moves to a database of the player's typical gameplay, then makes an assessment of the statistical likelihood of cheating.  Dr. Regan frequently consults at international chess matches.
+UB receives prestigious IBM award for ‘green internet’ collaboration
+6/12/19
+Proposed software solution could extend battery life, reduce energy consumption.
+More Research Highlights
+Recognitions
+previous
+next
+SEAS faculty receive CAREER Awards to improve wastewater treatment and enhance AI decision-making
+8/4/25
+Two faculty members in the UB’s School of Engineering and Applied Sciences earned NSF CAREER Awards to address the impact of harmful algal blooms on public health and the economy and to enhance multi-objective decision-making in LLMs and AI systems.
+Siwei Lyu named SUNY Distinguished Professor
+5/23/25
+SUNY Distinguished Professor is the highest faculty rank in the SUNY system.
+Atri Rudra receives Test of Time Award
+4/17/25
+The award recognizes a paper that was published in the PODS proceedings 10 years prior that has had the most impact to research or practice over the previous decade.
+Marina Blanton recognized as ACM distinguished member
+4/3/25
+Blanton is recognized for her contributions to the advancement of privacy-preserving computation.
+Xiong recognized by IEEE with Best Paper Award
+2/3/25
+A paper authored by Jinjun Xiong, SUNY Empire Innovation Professor in Computer Science and Engineering, earned the 2024 Best Paper Award from the IEEE Transactions on Radiation and Plasma Medical Sciences (TRPMS) journal.
+More Recognitions

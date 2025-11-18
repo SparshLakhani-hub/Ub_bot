@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UB RAG Bot – New UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ubBlue: '#005BBB',
+            ubBlueDark: '#004090'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Modern font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
+
+    .ub-glass {
+      background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 55%),
+                  rgba(15, 23, 42, 0.96);
+      backdrop-filter: blur(16px);
+      box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.60),
+        0 0 0 1px rgba(148, 163, 184, 0.10);
+    }
+
+    .ub-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .ub-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .ub-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.6);
+      border-radius: 999px;
+    }
+
+    .fade-in {
+      animation: fadeIn 180ms ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-900/5 min-h-screen">
+  <!-- Root container -->
+  <div id="ub-chat-root" class="fixed bottom-6 right-6 z-50">
+    <!-- Toggle button -->
+    <button
+      id="ub-chat-toggle"
+      class="flex items-center gap-2 rounded-full bg-ubBlue text-white px-4 py-2 shadow-lg shadow-blue-900/40 hover:bg-ubBlueDark transition-all duration-150 active:scale-95"
+      aria-expanded="false"
+    >
+      <!-- Chat icon -->
+      <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 9h10M7 13h6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 11.5c0 4.142-3.582 7.5-8 7.5-1.001 0-1.96-.164-2.856-.468L5 19l1.217-3.25C5.456 14.6 5 13.102 5 11.5 5 7.358 8.582 4 13 4s8 3.358 8 7.5z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <div class="flex flex-col text-left leading-tight">
+        <span class="text-xs font-semibold tracking-wide uppercase">
+          UB Bot
+        </span>
+        <span class="text-[11px] text-blue-100/90">
+          Programs • Admissions • Campus life
+        </span>
+      </div>
+      <!-- Online indicator -->
+      <span class="relative ml-1 inline-flex h-2.5 w-2.5">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75 animate-ping"></span>
+        <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+      </span>
+    </button>
+
+    <!-- Chat panel -->
+    <div
+      id="ub-chat-panel"
+      class="mt-3 hidden w-[360px] sm:w-[420px] rounded-2xl ub-glass text-slate-50 overflow-hidden"
+    >
+      <!-- Header -->
+      <div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
+        <div>
+          <p class="text-sm font-semibold flex items-center gap-2">
+            UB Bot <span class="rounded-full bg-emerald-500/80 h-1.5 w-1.5"></span>
+          </p>
+          <p class="text-[11px] text-slate-300">
+            Unofficial assistant for prospective UB students
+          </p>
+        </div>
+        <button
+          id="ub-chat-close"
+          class="p-1 rounded-full hover:bg-white/10 text-slate-200 transition"
+          aria-label="Close chat"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 6l12 12M6 18L18 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Messages -->
+      <div
+        id="ub-chat-messages"
+        class="max-h-[380px] min-h-[220px] overflow-y-auto ub-scrollbar px-4 py-3 space-y-2 text-sm"
+      >
+        <!-- Messages injected via JS -->
+      </div>
+
+      <!-- Typing indicator -->
+      <div
+        id="ub-chat-typing"
+        class="hidden px-4 pb-2 text-[11px] text-slate-300 flex items-center gap-2"
+      >
+        <span class="inline-flex items-center justify-center h-5 w-5 rounded-full bg-slate-700/80">
+          <span class="flex gap-[2px]">
+            <span class="h-1 w-1 rounded-full bg-slate-200 animate-bounce"></span>
+            <span class="h-1 w-1 rounded-full bg-slate-300 animate-bounce [animation-delay:80ms]"></span>
+            <span class="h-1 w-1 rounded-full bg-slate-400 animate-bounce [animation-delay:160ms]"></span>
+          </span>
+        </span>
+        UB Bot is thinking…
+      </div>
+
+      <!-- Input -->
+      <form id="ub-chat-form" class="border-t border-white/10 bg-slate-900/40 px-3 py-2.5">
+        <div class="flex items-end gap-2">
+          <textarea
+            id="ub-chat-input"
+            rows="1"
+            class="flex-1 resize-none rounded-xl bg-slate-900/60 border border-slate-600/60 px-3 py-2 text-xs text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-ubBlue focus:border-transparent ub-scrollbar"
+            placeholder="Ask a question about UB programs, admissions, housing..."
+          ></textarea>
+          <button
+            id="ub-chat-send"
+            type="submit"
+            class="inline-flex items-center justify-center rounded-xl bg-ubBlue px-3.5 py-2 text-xs font-medium shadow-md shadow-blue-900/40 hover:bg-ubBlueDark disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+          >
+            <span id="ub-chat-send-label" class="flex items-center gap-1">
+              <span>Send</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span id="ub-chat-send-spinner" class="hidden">
+              <svg class="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg"
+                   fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-20" cx="12" cy="12" r="10"
+                        stroke="currentColor" stroke-width="3"></circle>
+                <path class="opacity-80" fill="currentColor"
+                      d="M4 12a8 8 0 018-8v3a5 5 0 00-5 5H4z"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Point this to your FastAPI backend
+    const API_BASE_URL = "http://localhost:8000";
+
+    const chatToggle = document.getElementById("ub-chat-toggle");
+    const chatPanel = document.getElementById("ub-chat-panel");
+    const chatClose = document.getElementById("ub-chat-close");
+    const messagesEl = document.getElementById("ub-chat-messages");
+    const typingEl = document.getElementById("ub-chat-typing");
+    const formEl = document.getElementById("ub-chat-form");
+    const inputEl = document.getElementById("ub-chat-input");
+    const sendBtn = document.getElementById("ub-chat-send");
+    const sendLabel = document.getElementById("ub-chat-send-label");
+    const sendSpinner = document.getElementById("ub-chat-send-spinner");
+
+    let sessionId = null;
+    let isSending = false;
+
+    // --- UI helpers ---------------------------------------------------------
+
+    function togglePanel(show) {
+      const isHidden = chatPanel.classList.contains("hidden");
+      const shouldShow = typeof show === "boolean" ? show : isHidden;
+
+      if (shouldShow) {
+        chatPanel.classList.remove("hidden");
+        chatPanel.classList.add("fade-in");
+        chatToggle.setAttribute("aria-expanded", "true");
+        setTimeout(() => inputEl.focus(), 150);
+      } else {
+        chatPanel.classList.add("hidden");
+        chatToggle.setAttribute("aria-expanded", "false");
+      }
+    }
+
+    function setSending(state) {
+      isSending = state;
+      if (state) {
+        sendBtn.disabled = true;
+        sendLabel.classList.add("hidden");
+        sendSpinner.classList.remove("hidden");
+        typingEl.classList.remove("hidden");
+      } else {
+        sendBtn.disabled = false;
+        sendLabel.classList.remove("hidden");
+        sendSpinner.classList.add("hidden");
+        typingEl.classList.add("hidden");
+      }
+    }
+
+    function scrollToBottom() {
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function addMessage(text, sender = "bot") {
+      const wrapper = document.createElement("div");
+      wrapper.className = "flex " + (sender === "user" ? "justify-end" : "justify-start");
+
+      const bubble = document.createElement("div");
+      bubble.className =
+        "max-w-[82%] rounded-2xl px-3 py-2 text-xs leading-relaxed fade-in " +
+        (sender === "user"
+          ? "bg-ubBlue text-white rounded-br-sm shadow-md shadow-blue-900/40"
+          : "bg-slate-800/90 text-slate-50 border border-slate-700/70 rounded-bl-sm shadow-md shadow-black/40");
+
+      // Simple newline -> <br> conversion
+      bubble.innerHTML = text.replace(/\n/g, "<br />");
+
+      wrapper.appendChild(bubble);
+      messagesEl.appendChild(wrapper);
+      scrollToBottom();
+    }
+
+    function addWelcomeMessage() {
+      addMessage(
+        "Hi! I’m UB Bot. Ask me anything about programs, admissions, housing, or campus life at the University at Buffalo.\n\n" +
+        "For example:\n- \"What is the MS in Computer Science program like?\"\n" +
+        "- \"How do I apply as an international student?\"\n" +
+        "- \"Tell me about housing and dining at UB.\"",
+        "bot"
+      );
+    }
+
+    // --- Network ------------------------------------------------------------
+
+    async function sendToBackend(message) {
+      const payload = { message };
+      if (sessionId) {
+        payload.session_id = sessionId;
+      }
+
+      const response = await fetch(`${API_BASE_URL}/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Server returned ${response.status}`);
+      }
+
+      return response.json();
+    }
+
+    // --- Event handlers -----------------------------------------------------
+
+    chatToggle.addEventListener("click", () => togglePanel());
+    chatClose.addEventListener("click", () => togglePanel(false));
+
+    formEl.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const text = inputEl.value.trim();
+      if (!text || isSending) return;
+
+      addMessage(text, "user");
+      inputEl.value = "";
+      inputEl.rows = 1;
+
+      try {
+        setSending(true);
+        const data = await sendToBackend(text);
+        if (data.session_id) {
+          sessionId = data.session_id;
+        }
+        const answer = (data.answer || "").trim();
+        if (answer) {
+          addMessage(answer, "bot");
+        } else {
+          addMessage(
+            "Sorry, I couldn’t generate a detailed answer. Please try rephrasing your question.",
+            "bot"
+          );
+        }
+      } catch (err) {
+        console.error(err);
+        addMessage(
+          "Hmm, something went wrong while talking to the UB backend. Please check that the server is running on http://localhost:8000 and try again.",
+          "bot"
+        );
+      } finally {
+        setSending(false);
+      }
+    });
+
+    // Auto-resize textarea
+    inputEl.addEventListener("input", () => {
+      inputEl.style.height = "auto";
+      inputEl.style.height = (inputEl.scrollHeight > 100 ? 100 : inputEl.scrollHeight) + "px";
+    });
+
+    // Send on Enter (without Shift)
+    inputEl.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        formEl.requestSubmit();
+      }
+    });
+
+    // --- Init ---------------------------------------------------------------
+    addWelcomeMessage();
+  </script>
+</body>
+</html>
+

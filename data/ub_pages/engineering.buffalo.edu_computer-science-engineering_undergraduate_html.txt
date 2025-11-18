@@ -1,0 +1,199 @@
+# https://engineering.buffalo.edu/computer-science-engineering/undergraduate.html
+
+Undergraduate - Department of Computer Science and Engineering - University at Buffalo
+How to Apply
+Admissions Information
+Undergraduate Program
+Josh Bueno (CS BS '16), Dr. Bina Ramamurthy, Gela Malek Pour (CS BS '16), Meg Arnold (CS BS/MTH BS '17), Wendy Jansson (CEN BS '16), and Dr. Atri Rudra at CSEdWeek '15, December 7, 2015. Photo credit: Ken Smith
+Brett Kolodny (CS BA candidate) and Angus Lam (CS BS and Linguistics BA candidate) demo Plantr, an automated hydroponics system with a self-regulating environment, at CSEdWeek '15, December 7, 2015. Plantr runs on Arduino and Python. Photo credit: Ken Smith
+Students demonstrate a project at CSE Open House '13, March 23, 2013. Photo credit: Ken Smith
+Center of Excellence in Information Systems Assurance Research and Education (CEISARE) Director Shambhu Upadhyaya addresses the Buffalo Niagara Information Systems Security Association (ISSA) Panel Session. Photo credit: Ken Smith
+Students get inspired at the UB Hacking '15 event opener, November 14, 2015. Photo credit: Ken Smith
+Jordi Frank (CS BA '16) and Dominique Hickson (CEN BS '17, MS candidate) demonstrate their Arduino Arm Robot at CSEdWeek '15, December 7, 2015. Photo credit: Ken Smith
+"Hello World!" Alex Anelli (CS BS '17) and Troy Liebel (CS BS '17) demo their project at CSEdWeek Open House '16, December 5, 2016. Photo credit: Ken Smith
+Students demonstrate a project at CSEdWeek Open House '16, December 5, 2016. Photo credit: Ken Smith
+Students collaborate at UB Hacking '16, November 5, 2016. Photo credit: Ken Smith
+Students working at UB Hacking '14, November 7, 2014. Photo credit: Ken Smith
+Students pose with their rover at UB Hacking '14, April 5, 2014. Photo credit: Ken Smith
+SEAS Student Poster Session '13, March 7, 2013. Photo credit: Ken Smith
+A FactSet colleague and Matthew Dyson (CS BS '12) return to UB for UB Hacking '15, November 14, 2015. Photo credit: Ken Smith
+This well-liked fellow, an Aldebaran Nao humanoid robot, was a member of Jason Corso's Vision and Perceptual Machines Lab (VPML). His sunny yet somewhat vague countenance welcomed visitors who entered Davis Hall by the north entrance. Photo credit: Ken Smith
+SEAS Poster Competition '13 winners Ankur Upadhyay (MS '14), Daniel Bellinger (CS BS '14), and Sumit Agarwal (MS '14), April 3, 2013. Photo credit: Ken Smith
+UB President and Computer Science Professor Satish Tripathi welcomes attendees to the CSE 50th Anniversary Graduate Research Conference in the CFA, September 29, 2017. Photo credit: Angela Doll Photography
+Students gather at UB Hacking '18, November 3, 2018. Photo credit: Ken Smith
+Bot Wars pits student club-designed robots against one another in cage matches until the final victor triumphs. Student Affairs hosts this popular Engineers Week event in the Student Union atrium every February. Photo credit: Sarah D'Iorio
+Students describe their work at SEAS Student Poster Competition '13, April 3, 2013. Photo credit: Ken Smith
+Dr. Kenny Joseph teaches a CSE 199: "How the Internet Works" recitation in Fall 2018. Photo credit: Maximilian Kapitonoff
+Students at UB Hacking '14, November 7, 2014. Photo credit: Ken Smith
+Dr. Bina Ramamurthy in a UB research lab, 2010. Photo credit: Douglas Levere
+Project at UB Hacking '15, November 14, 2015. Photo credit: Ken Smith
+Visiting alum Geetha Srikantan (MS '91, PhD '94) and Undergraduate Program Co-Directors Carl Alphonce and Atri Rudra present a Best Poster Award to senior Matthew Stafford (CS BS '18) at the CSE 50th Anniversary Undergraduate Poster Competition in Davis Hall. Photo credit: Angela Doll Photography
+UB Hacking '15, November 14, 2015. Front row: Josh Bueno (CS BS '16) and Mark Simson (CS BS '16). Back row: Wendy Shi, Gino Notto (CS BS '16), Aishani Bhalla, Ashish Tyagi (CS BS, MTH BA '17), Isaac Reath (CS BS '16), Meg Arnold (CS BS, MTH BA '17), Zach Wieand (CS BS '17), Amey Sanjay Mahajan (CS BS '17), and Alex Rookey (CS BS '16). Photo credit: Ken Smith
+Students at UB Hacking '15, November 14, 2015. Photo credit: Ken Smith
+Angus Lam (CS BS and Linguistics BA candidate) and Brett Kolodny (CS BA candidate) develop Plantr, an automated hydroponics system with a self-regulating environment, at UB Hacking '15, November 14, 2015. Plantr runs on Arduino and Python. Photo credit: Ken Smith
+ACM Buffalo Chapter Hackathon '13, April 14, 2013. Organizers Joe Peacock (CEN BS '16) and Nick Di Rienzo (CS BS '15) with the first place winners, GamePute team members Scott Florentino (CS BS/MS '16), Andrew Wantuch (CS BS/MS '13), Jen Cordaro (MTH BS/CS MS '15), and Andrew Kopanon (MTH BA/PHY BS '14). Photo credit: Ken Smith
+CSEdWeek '15 welcome committee: Brian Francis De Guzman (CS BS '18), Elliott King (CS BS '17), and Valencia Kaplinksy (CS BS '18). Photo credit: Ken Smith
+Wendy Jansson (CEN BS '16) and her rover at CSEdWeek '15, December 7, 2015. Photo credit: Ken Smith
+American Association of University Women (AAUW) Tech Savvy 12, March 18, 2017. Valencia Kaplinsky (CS BS '18), Wendy Shi (CS BA, CS BS '18), Heeba Kariapper (CS BA candidate), Chinmayee Rane (CS BA, MTH BA candidate), Harshita Girase (CS BS candidate), Sravanika Doddi (CS BS/MS candidate), Dr. Jenn Winikus, Kun Woo Cho (CEN BS '18), Lawreen Latif (CS BS candidate), and Prasanna Ethiraj (CS BS/MS '18).
+American Association of University Women (AAUW) Tech Savvy 11 planning team, March 19, 2016. Pictured are: Sada Haider, Lakshmi Prasanna Ethiraj, Dr. Carl Alphonce, Aishani Bhalla, and Julia Cordani. Unable to attend: Sravanika Doddi, Wendy Shi, Meg Arnold (CS BS and MTH BA '17), Valencia Kaplinsky, and Rachel Roberts.
+The ACV Auctions delegation at UB Hacking '18, November 3, 2018. Photo credit: Ken Smith
+Davis Hall, headquarters of the CSE undergraduate program.
+Visiting high school students look on as Dr. Kris Schindler and William Phillips (CS BS candidate) demonstrate the UB Talker brain/computer interface in the Baldy 19 instructional lab. This research project is designed to help people with ALS interact with their computers.
+Students from Buffalo Public Schools start to build their own simple smartphone using a Raspberry Pi computer circuit board as part of a camp program between UB and Liberty Partnerships Program. Dr. Jenn Winikus teaches students how to work on the electronics of the project in her Bonner Hall lab. Photo credit: Meredith Forrest Kulwicki
+Faculty, students, and new participants gather for the CSE laptop pilot program, sponsored by the President's Circle, in Davis Hall. Photo credit: Douglas Levere
+Meg Arnold (CS BS/MTH BS '17), Josh Bueno (CS BS '16), Alex Rookey (CS BS '16), and AJ Stohr (CS BS '16) at UB Hacking '15, November 14, 2015. Photo credit: Ken Smith
+Dr. Qiao at CSE Demo Day '18, December 7, 2018. Photo credit: Ken Smith
+Students collaborate in Mike Buckley's CSE 453: Hardware/Software Integrated Systems Design lab in Fall 2009. Photo credit: Douglas Levere
+Slideshow
+previous
+next
+of
+change view
+fullscreen
+The bachelor's degree is your first step toward a career in computing and information technology, whether you'd like to work in industry, start your own company, or continue your professional education in graduate school.
+Our undergraduate programs are designed to give you a solid, world-class educational foundation in both classical and cutting-edge aspects of the fields.  And because computing is increasingly ubiquitous in every field of human endeavor, many students are choosing to complement other programs of study with a computer science or computer engineering degree.
+Learn more about the Computer Science and Engineering Undergraduate Program.
+Admissions
+7/30/21
+Start here to apply to our undergraduate computer science, computer engineering, or special joint academic programs.
+Academic Advisement
+10/16/25
+Meet the academic advisors who will help you succeed in your program!
+Degrees & Programs
+10/16/25
+Discover which undergraduate program is right for you
+—a c
+omputer science degree, a computer engineering degree, a special joint academic programs degree, or a certificate.
+Scholarships, Assistantships, and Awards
+10/16/25
+Many CSE undergraduates receive financial aid in the form of scholarships and awards.
+Courses
+10/16/25
+The
+UB Undergraduate Academic Schedule
+lists our undergraduate
+Fall
+,
+Spring
+, and
+Summer
+course offerings.
+Resources for Current Students
+10/16/25
+These resources document the policies, rules, and even study habits that will help you succeed in your chosen academic program.
+Experiential Learning
+10/16/25
+Experiential learning gives you substantial preparation to enter the scientific and engineering professions and helps you explore future career options.  Many program graduates credit these experiences with giving them a competitive advantage during job searches and a smoother transition to full-time employment.
+UNDERGRADUATE OFFICE
+Co-Director of Undergraduate Studies
+Dr. Matthew Hertz
+352 Davis Hall
+Co-Director of Undergraduate Studies
+Dr. Jaroslaw (Jaric) Zola
+209 Capen Hall
+Undergraduate Academic Coordinator
+Sonia Grant
+338O Davis Hall
+Prospective Student Questions
+cse-uginfo@buffalo.edu
+Current Student Questions
+cse-uginfo@buffalo.edu
+Why Choose CSE?
+previous
+next
+Clubs
+1/28/25
+M
+eet new friends and apply skills you've learned in class to cool, real-world projects; get involved in
+professional and student organizations
+—
+such as the
+UB Association for Computing Machinery (UB ACM)
+,
+UB Hacking
+, and
+UB Divtech
+.
+Top-Notch Faculty
+1/28/25
+Be taught and mentored by
+faculty members
+who are outstanding teachers and internationally-recognized researchers.
+Supercomputing
+6/27/19
+UB's
+Center for Computational Research (CCR)
+is considered one of the nation's leading supercomputing centers and supports high performance computing for departmental research in the areas of bioinformatics, medical image processing, virtual reality, and geographic information systems.
+Hands-on Experience
+7/1/24
+Gain hands-on, real-world industrial experience via
+experiential learning opportunities
+:
+hackathons
+,
+undergraduate internships
+,
+professional and student organizations
+, and
+undergraduate research
+.
+Facilities
+10/18/21
+Use over 18,000 square feet of cutting-edge
+research labs, teaching labs
+, classrooms, and collaboration-focused meeting spaces.
+Accredited Computer Engineering BS
+1/28/25
+The
+Computer Engineering BS
+program is accredited by the
+Engineering Accreditation Commission of ABET
+under the commission’s General Criteria and Program Criteria for Electrical, Computer, Communications, Telecommunication(s), and Similarly Named Engineering Programs.
+Entrepreneurial Spirit
+7/1/24
+Dan Magnuszewski (CS BS '05) is co-founder and former CTO of
+ACV Auctions
+, a Buffalo-based startup that employs over 500 people nationwide.
+Successful Alumni
+11/2/22
+Join the department’s
+network of accomplished alumni
+who have gone on to
+top graduate programs and employment with companies such as Bloomberg, Google, and Microsoft.
+Industry Connections
+6/27/19
+Our industry partners include: Dell, IBM Corporation, IBM Digital, Kodak, Myricom, Praxair, Q-Chem, Sarnoff, Veridian Engineering Division, and Xerox.
+High Salaries
+6/27/19
+A degree in Computer Science or Computer Engineering opens doors to exciting and rewarding careers that command high salaries. According to the
+US Bureau of Labor Statistics Occupational Outlook Handbook
+, the median income for all computing and information technology occupations was $82,860 in May 2016.
+Accredited Computer Science BS
+7/10/24
+The
+Computer Science BS
+program is accredited by the
+Computing Accreditation Commission of ABET
+under the commission’s General Criteria and Program Criteria for Computer Science and Similarly Named Programs.
+Established and Growing
+6/27/19
+Over the past three years, we have hired six new
+faculty
+members: in algorithms, databases, data mining, electronic commerce, natural language processing, and networks. Computer science was first organized as a department at UB in 1967—one of the first in the U.S.—and merged with computer engineering in 1998 to form the present department.
+More Reasons to Choose CSE
+Experiential Learning
+previous
+next
+Senior Design
+9/18/18
+Senior Design is a required capstone course in many departments in which students work in teams to tackle a "real-world" engineering design problem.
+Tinkering
+1/3/24
+Tinkering is the first step in the experiential learning continuum. Students pursue self-led, hands-on practice as a precursor to being involved in more significant activities.
+Internships and Co-Ops
+9/18/18
+Students are eligible to earn academic credit for internships and co-ops that may fulfill degree requirements.
+Engineering Intramurals
+9/18/18
+An engineering intramural is any problem-based extracurricular engineering activity that provides an authentic (i.e., “real-world”) learning experience for students.
+More Experiential Learning Opportunities

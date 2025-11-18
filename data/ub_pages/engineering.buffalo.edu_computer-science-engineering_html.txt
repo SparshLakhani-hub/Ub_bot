@@ -1,0 +1,257 @@
+# https://engineering.buffalo.edu/computer-science-engineering.html
+
+Department of Computer Science and Engineering - University at Buffalo
+Share your commencement memories!
+5/19/25
+Share your photos from commencement with us, and help celebrate the experience!
+5/19/25
+Submit your photos here
+UB AI Institute for Exceptional Education
+10/10/24
+UB awarded $20 million to establish institute to create AI technologies to help children with speech, language disorders
+We're Hiring!
+10/10/24
+CSE is actively recruiting qualified candidates for
+multiple faculty positions at all levels
+.
+AI Institute Ribbon Cutting
+4/5/24
+Schumer, NSF director say UB is ready to lead nation in AI for social good
+Give to CSE
+5/4/22
+Your gift will help bright, hard-working CSE students fulfill their dreams by funding their studies and extracurricular enrichment activities.
+Read More
+previous
+next
+We're hiring! Now recruiting faculty for
+Artificial Intelligence faculty
+positions.
+Fast Facts
+#32
+in the US
+Computer Science and Engineering Program 2020-2023 national ranking
+Source:
+CSRankings.org
+#50
+in the US
+Computer Engineering Program 2022 national ranking
+Up from #66 in 2021
+Source:
+U.S. News & World Report
+59
+Faculty members
+912
+Graduate student majors
+158
+PhD candidates
+742
+MS candidates
+1,936
+Undergraduate student majors
+53
+Nations represented by CSE students
+1967
+Established Since
+Latest News
+Rohini Srihari discusses chatbots on UB's Driven to Discover podcast
+11/4/25
+Rohini Srihari, professor of computer science and engineering, was a guest on UB's Driven to Discover podcast, where she discussed how to make chatbots better.
+Harnessing Artificial Intelligence
+10/27/25
+Connect NY
+quoted Venu Govindaraju and mentioned Empire AI in a report on efforts in New York to harness artificial intelligence for the betterment of society.
+AI Generated Video of Drunk Man Petting Tiger Viral as Real
+10/21/25
+The Daily Hunt
+utilized the DeepFake-o-Meter, developed by Siwei Lyu and his team in the Media Forensic Lab, to determine that
+a viral video of a man petting a calm tiger is likely AI-generated.
+Sora is even fooling human deepfake detectors
+10/21/25
+Fast Company
+quoted Siwei Lyu in an article about Sora, Open AI’s new video generation program, and the problems it is causing for AI detectors.
+Did Cheating Accusations Have Anything to Do With the Death of a Chess Grandmaster?
+10/20/25
+The New York Times
+featured Kenneth Regan in an article about Daniel Naroditsky, a chess grandmaster who passed away in October, and noted that Naroditsky was one of several dozen prominent players who had their chess performances examined by Regan.
+More News
+>
+Upcoming SEAS Events
+We're busy planning new events. Check back soon.
+Loading events…
+More upcoming SEAS events
+>
+September 2024 Newsletter
+Computer Science and Engineering Research Areas
+previous
+next
+Theory
+4/19/24
+Theory researchers determine which problems can be solved through algorithms and complexity, and explore computer security.
+Artificial Intelligence
+8/11/25
+Artificial Intelligence is transforming our world, and can help solve complex problems in health care, manufacturing education and countless other industries.
+Interdisciplinary
+5/8/24
+Computer science and engineering research impacts different areas across several domains. Interdisciplinary researchers examine interactions between computers and humans, and explore ways computing can enhance health care and other industries.
+Systems
+4/19/24
+Our researchers make systems work better, and enhance the performance of mobile computing, robotics, networks, high-performance computing and several other areas.
+Computer Science [and Engineering] Timeline
+Highlights from the Department of Computer Science (CS) and the Department of Computer Science and Engineering (CSE).
+See the full timeline!
+previous
+next
+CSE 50 1967-2017
+11/4/22
+Click here to see our entire timeline of the first 50 years of Computer Science and Engineering at UB.
+Ridge Lea
+11/4/22
+UB assigns us our first home on the Ridge Lea Campus.
+Milestone: 5 Faculty
+11/4/22
+The Computer Science Department at the University at Buffalo is formed within the Faculty of Engineering and Applied Sciences (FEAS).
+Grad Programs at Inception
+11/4/22
+University course catalogs first describe our Master of Science and Doctor of Philosophy programs.
+Milestone: 10 Faculty
+11/4/22
+We achieve the ten faculty member milestone.
+Chess-Playing Graphical Computer
+11/4/22
+Nick Findler buys a chess-playing graphical computer with NSF funds, beginning a long departmental tradition of incorporating games into our research.
+Buffalo buffalo Buffalo
+11/4/22
+William J. Rapaport
+popularizes the grammatically-parsable phrase, "Buffalo buffalo buffalo buffalo buffalo".
+Medical Image Processing Group
+11/4/22
+Gabor T. Herman develops a world-renowned Medical Image Processing Group from 1969 to 1981.
+No More Punchcards
+11/4/22
+We buy a Digital Equipment Corporation (DEC) VAX 11/750 minicomputer.
+Bell Hall
+11/4/22
+We take up residence in
+Bell Hall
+, placing us in the center of North Campus activity and culture.
+Milestone: 15 Faculty
+11/4/22
+We achieve the 15 (actually 16) faculty member milestone.
+First Grad Conference
+11/4/22
+Jim Geller (PhD, '88) organizes our first annual grad conference to give our grad students a forum to show off their current research.
+Milestone: 20 Faculty
+11/4/22
+We achieve the 20 faculty member milestone.
+CEDAR
+11/4/22
+Sargur (Hari) Srihari
+founds the
+Center of Excellence for Document Analysis and Recognition
+(CEDAR).
+25th Anniversary
+11/4/22
+We celebrate our 25th anniversary with a banquet and a symposium.
+CCS
+11/4/22
+The university establishes a multidisciplinary
+Center for Cognitive Science
+, uniting computer science with cognitive psychology disciplines.
+Milestone: 25 Faculty
+11/4/22
+We achieve the 25 (actually 26) faculty member milestone.
+CS + CE = CSE
+11/4/22
+The Department of Computer Science and Engineering (CSE) is born!
+Milestone: 30 Faculty
+11/4/22
+The merger accelerates us past the 30 faculty member milestone. Between '97 and '98, we grow from 26 to 33 faculty.
+CCR
+2/18/25
+Russ Miller
+founds the
+Center for Computational Research
+, the university supercomputer cluster that has the capability of processing 60 billion operations per second.
+Milestone: 35 Faculty
+11/4/22
+We enter the 2000s with 36 faculty.
+CEISARE
+11/4/22
+Shambhu Upadhyaya
+founds the
+Center of Excellence in Information Systems Assurance Research and Education
+(CEISARE).
+CUBS
+11/4/22
+Venu Govindaraju
+founds the
+Center for Unified Biometrics and Sensors
+(CUBS).
+40th Anniversary
+11/4/22
+We convened at the Ramada Hotel and Conference Center to celebrate our 40th anniversary.
+Davis Hall
+11/4/22
+Davis Hall
+—Our brand-new, state-of-the-art departmental headquarters.
+Milestone: 40 Faculty
+11/4/22
+We begin Fall 2015 with a strength of 40 faculty.
+50th Anniversary
+11/4/22
+The Department of Computer Science and Engineering celebrates its 50th anniversary.
+Faces & Voices
+“Students need to be exposed to basic, preliminary engineering concepts before high school. You've got to get them in the pipeline in middle school. Make it fun, creative, exciting.”
+4/3/17
+Lavone Rodolph
+Computer Engineering BS '03, MS '05, PhD Candidate '19
+"Computer engineering can be directly applicable to real problems, and there's a strong job market.”
+4/3/17
+Jacob Condello
+Computer Engineering BS '17
+“UB is such a big campus, but computer science is a well-knit community if you choose to be a part of it.”
+4/3/17
+Sanjee Choudhery
+Computer Engineering BS '17
+"To the aspiring Black engineers, there is more than enough space in the industry for your knowledge and creativity and your input is needed, wanted and valued."
+4/17/23
+Kendra Claiborne
+BS'15, computer science
+“Through student clubs I have found a sense of community with people that motivate me and inspire me every day. ”
+9/17/24
+Lisa Kanbur
+Computer science student
+"The atmosphere among professors to cooperate on joint projects is really good.  It leads to very many top-tier papers and works."
+4/4/17
+Zhan Qin
+PhD '17
+"My pitch at open house is that UB is really big but our department's really small and you can find your way around."
+4/3/17
+Meg Arnold
+Computer Science BS and Mathematics BA '17
+"Here, there are different career opportunities, good opportunities in industry as well."
+4/4/17
+Luigi Di Tacchio
+MS '19
+"I'm amazed by what I was able to do in CSE's student server room. I can bring up and manage a whole network infrastructure."
+4/3/17
+James Droste
+Computer Science BS '17
+"Getting to know my professors helped a lot. They're phenomenal."
+4/3/17
+Dominique Hickson
+Computer Engineering BS '17
+“I enjoy how research-oriented the professors are, and how open they are to working with undergraduates.”
+9/17/24
+Alex Liu
+Computer science student
+"Research is a change process.  From being scared at first to being interested in it."
+4/4/17
+Aosen Wang
+PhD '18
+"My favorite part about the Society of Hispanic Professional Engineers is the amount of career opportunities that come with being involved with the club."
+9/17/24
+Sebastian Cisneros
+Computer science student
+previous
+next

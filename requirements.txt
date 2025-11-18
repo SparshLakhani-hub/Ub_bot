@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+openai>=1.0.0
+chromadb
+python-dotenv
+requests
+beautifulsoup4
