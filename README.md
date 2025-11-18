@@ -1,6 +1,20 @@
 # UB RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) chatbot for the University at Buffalo (UB), built with FastAPI, OpenAI, and a local Chroma vector database. The bot answers questions for prospective and newly admitted students using UB website content and exposes a simple embeddable web widget.
+A Retrieval-Augmented Generation (RAG) chatbot for the University at Buffalo (UB), built with FastAPI, OpenAI/Ollama, and a local Chroma vector database. The bot answers questions for prospective and newly admitted students using UB website content and exposes a simple embeddable web widget.
+
+Repository: https://github.com/SparshLakhani-hub/Ub_bot
+
+## Overview and Features
+
+- RAG-based QA over curated UB pages (admissions, housing, MS CS program, etc.).
+- Optional scraper that pulls the **CSE faculty directory** and saves cleaned text into `data/ub_pages/ub_cse_faculty_directory.txt` so the bot can answer questions about professors.
+- Local vector store using **ChromaDB** for fast semantic search.
+- Pluggable LLM backend:
+  - **Ollama** for fully local, no-cost inference.
+  - **OpenAI** for hosted models if you have an API key.
+- REST API built with **FastAPI** exposing `/chat`, `/health`, and `/sources` endpoints.
+- Standalone HTML **chat widget** (`frontend/ub_chat_widget.html`) that can be embedded into other sites.
+- Conversation history per session ID so the bot can handle follow-up questions.
 
 ---
 
